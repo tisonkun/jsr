@@ -52,6 +52,7 @@ import * as $CopyButton from "./islands/CopyButton.tsx";
 import * as $DevelopmentLogin from "./islands/DevelopmentLogin.tsx";
 import * as $GitHubActionsLink from "./islands/GitHubActionsLink.tsx";
 import * as $GithubUserLink from "./islands/GithubUserLink.tsx";
+import * as $HeaderLogo from "./islands/HeaderLogo.tsx";
 import * as $HomepageHero from "./islands/HomepageHero.tsx";
 import * as $PackageSearch from "./islands/PackageSearch.tsx";
 import * as $PollPublishingTask from "./islands/PollPublishingTask.tsx";
@@ -123,6 +124,7 @@ const manifest = {
     "./islands/DevelopmentLogin.tsx": $DevelopmentLogin,
     "./islands/GitHubActionsLink.tsx": $GitHubActionsLink,
     "./islands/GithubUserLink.tsx": $GithubUserLink,
+    "./islands/HeaderLogo.tsx": $HeaderLogo,
     "./islands/HomepageHero.tsx": $HomepageHero,
     "./islands/PackageSearch.tsx": $PackageSearch,
     "./islands/PollPublishingTask.tsx": $PollPublishingTask,

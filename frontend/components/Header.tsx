@@ -3,7 +3,7 @@
 import { FullUser } from "../utils/api_types.ts";
 import { PackageSearch } from "../islands/PackageSearch.tsx";
 import { UserMenu } from "../islands/UserMenu.tsx";
-import { Logo } from "./Logo.tsx";
+import { HeaderLogo } from "../islands/HeaderLogo.tsx";
 import { GitHub } from "./icons/GitHub.tsx";
 
 export function Header({ user, url }: {
@@ -26,14 +26,7 @@ export function Header({ user, url }: {
       }`}
     >
       <div class="flex justify-between items-center text-base md:text-lg flex-wrap gap-4 lg:gap-8 h-full">
-        {isHomepage
-          ? <div></div>
-          : (
-            <a href="/" class="outline-none focus-visible:ring-2 ring-cyan-700">
-              <span className="sr-only">JSR home</span>
-              <Logo class="h-8 flex-none hover:animate-flip-rotate" />
-            </a>
-          )}
+        {isHomepage ? <div></div> : <HeaderLogo class="h-8 flex-none" />}
         <div class="hidden sm:block grow-1 flex-1">
           {!isHomepage && (
             <PackageSearch
