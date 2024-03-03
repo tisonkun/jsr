@@ -26,7 +26,9 @@ export function Header({ user, url }: {
       }`}
     >
       <div class="flex justify-between items-center text-base md:text-lg flex-wrap gap-4 lg:gap-8 h-full">
-        {isHomepage ? <div></div> : <HeaderLogo class="h-8 flex-none" />}
+        <div>
+          {!isHomepage && <HeaderLogo class="h-8 flex-none" />}
+        </div>
         <div class="hidden sm:block grow-1 flex-1">
           {!isHomepage && (
             <PackageSearch
